@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt Digitizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Receipt Digitizer</h1>
+
+    <video id="video" width="320" height="240" autoplay></video>
+    <button id="captureBtn">Capture</button>
+    <canvas id="canvas" width="320" height="240" style="display:none;"></canvas>
+
+    <p id="status"></p>
+    <pre id="output"></pre>
+
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4/dist/tesseract.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
