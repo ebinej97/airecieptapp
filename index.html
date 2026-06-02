@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ground Shot Cricket</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#game" aria-label="Ground Shot Cricket home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>cricketpix</span>
+      </a>
+      <label class="search" aria-label="Search games">
+        <span aria-hidden="true"></span>
+        <input type="search" placeholder="Search" />
+      </label>
+    </header>
+
+    <main class="page-shell">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="#">Games</a>
+        <span>▶</span>
+        <a href="#">Sports</a>
+        <span>▶</span>
+        <span>Ground Shot Cricket</span>
+      </nav>
+
+      <section class="title-row" aria-labelledby="game-title">
+        <h1 id="game-title">Ground Shot Cricket</h1>
+        <div class="rating" aria-label="Rating: four out of five stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span class="dim">★</span>
+          <strong>1.05k votes</strong>
+        </div>
+      </section>
+
+      <div class="content-grid">
+        <aside class="ad-rail" aria-label="Advertisement placeholder"></aside>
+
+        <section class="game-card" id="game" aria-label="Cricket game">
+          <div class="game-toolbar">
+            <button id="restartButton" type="button" title="Restart game" aria-label="Restart game">⌂</button>
+            <div class="score-panel" aria-live="polite">
+              <div class="target-box">
+                <span>TARGET</span>
+                <strong id="targetText">55</strong>
+              </div>
+              <div class="score-box">
+                <span>SCORE</span>
+                <strong id="scoreText">0</strong>
+              </div>
+              <div class="mini-stat"><span>Ball Left :</span><strong id="ballsText">16</strong> 🏏</div>
+              <div class="mini-stat"><span>Wicket Left :</span><strong id="wicketsText">6</strong> 🪵</div>
+            </div>
+            <button id="soundButton" type="button" title="Toggle sound" aria-label="Toggle sound">🔊</button>
+          </div>
+
+          <canvas id="gameCanvas" width="1044" height="490" aria-label="Ground shot cricket game canvas"></canvas>
+
+          <div class="prompt-card" id="promptCard">
+            <p id="statusText">Press <kbd>Space</kbd> as the ball reaches the bat.</p>
+            <p class="hint">Perfect timing creates a bat-ball connection after the pitch bounce. Early/late timing changes ground drives, chips, sixes, edges, or misses.</p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
